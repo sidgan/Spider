@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Spider : Spider for crawling sites">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Spider</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sidgan/Spider">View on GitHub</a>
+
+          <h1 id="project_title">Spider</h1>
+          <h2 id="project_tagline">Spider for crawling sites</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sidgan/Spider/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sidgan/Spider/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="spiders" class="anchor" href="#spiders" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spiders.</h3>
+
+<p>A spider algorithm or a web crawler is an internet bot that crawls a site for information usually in the form of text. A spider works by first going to the seminal link and then parsing the text on that web page to find more links that direct it to other web pages. These freshly found links are added to a stack or queue. All the links or urls in this stack or queue are traversed by the spider one by one. </p>
+
+<p>So, from the initial web page the spider lands to another web page and continues its journey forth, recursively. In this way it crawls throughout the web. This means that from one page the spider should be able to access all the pages that are present on the World Wide Web, but my spider does not do that because I have limited it to access only the links present on the initial web page. </p>
+
+<p>Spiders are usually used for web indexing. Other uses are to update web content or indexes. Spiders have the ability to copy all the content of a web page (if the page permits). All this data will be processed by a search engine at a later stage for indexing so that searching and information retrieval is rendered faster and easier. </p>
+
+<p>In order to get data from a site I usually use one of the following four methods: </p>
+
+<ul>
+<li>curl command - Tool to transfer data from or to a server using http/https/ftp </li>
+<li>lynx command - World Wide Web (WWW) client/browser for users running terminals.</li>
+<li>wget command - Enables non-interactive download of files from the Web. It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.</li>
+<li>w3m command - It is a text based Web browser and pager.</li>
+</ul>
+
+<p>These are not the only way to get links or urls from a site. An easier and direct way is to use Python's parsing libraries namely urlparse, urllib along with Beautiful Soup. Another alternate way is to use HTTP get and post requests. </p>
+
+<h3>
+<a id="privacy-policy" class="anchor" href="#privacy-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Privacy Policy</h3>
+
+<p>The file robots.txt provides permission to the crawler to get the data from the page. It is essential that scraping be done only for those web pages that allow it. In order to read this file we can employ robotparser of Python. Then if the permission is granted the spider will create a separate thread and go to this site to parse it. </p>
+
+<h3>
+<a id="tags" class="anchor" href="#tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tags</h3>
+
+<p>The biggest advantage of using Beautiful Soup is its soup objects. These soup objects are flexible enough to be used capriciously. I have used them by sorting according to tags. This enables me to differentiate between the various HTML tags which is very important because this entails the basis of all web pages. I have used ‘href’ tags to find the url of the next page that will be appended to the list of the urls. If instead I had used the ‘a’ tag, then the url would turn out to be only a page and no hyperlink would exist, so a better option was to use the ‘href’ tags. </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Spider maintained by <a href="https://github.com/sidgan">sidgan</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
