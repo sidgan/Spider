@@ -4,7 +4,6 @@ import urllib
 from bs4 import BeautifulSoup
 import robotparser
 
-
 #
 #using lynx commands
 #lynx -dump http://sidgan.tumblr.com/ > tumblr.txt
